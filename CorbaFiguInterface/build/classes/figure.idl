@@ -1,0 +1,23 @@
+module example{
+    interface figure{
+        /*
+        * Para generar
+        * in: el valor del parametro se lo envia el cliente al servidor
+        * long: -231..231-1 (32 bits)
+        * numero: nombre de la variable
+        */
+        string generar(in long numero);
+        
+        double areaCubo(in double a);
+        double volumenCubo(in double a);
+
+        double areaParalelepipedo(in double a, in double b, in double c);
+        double volumenParalelepipedo(in double a, in double b, in double c);
+
+        double areaCilindro(in double r, in double h);
+        double volumenCilindro(in double r, in double h);
+
+        double areaEsfera(in double r);
+        double volumenEsfera(in double r);
+    };
+};
